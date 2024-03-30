@@ -26,11 +26,11 @@ const UserForm = () => {
       setError(data.error);
     }
     if (response.ok) {
-      setName('')
-      setPassword('')
-      setEmail('')
-      setClassName('')
-      setName('')
+      setName("");
+      setPassword("");
+      setEmail("");
+      setClassName("");
+      setName("");
       setError(null);
       console.log("data", data);
     }
@@ -45,7 +45,7 @@ const UserForm = () => {
         onChange={(e) => setName(e.target.value)}
         value={name}
       />
-      <label>className</label>
+      <label>ClassName</label>
       <input
         type="text"
         onChange={(e) => setClassName(e.target.value)}
@@ -55,7 +55,7 @@ const UserForm = () => {
         <input type="checkbox" value={isTeacher} />
         <label>Teacher</label>
       </div>
-      <button >submit</button>
+      <button>submit</button>
       {error && <div className="error">{error}</div>}
     </form>
   );
